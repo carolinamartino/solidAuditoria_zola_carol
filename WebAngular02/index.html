@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html ng-app="app2">
+<head>
+    <title>WebAPI com Bootstrap</title>
+    <script src="scripts/angular.js"></script>
+    <script src="App/main.js"></script>
+    <script src="App/Controllers/AlunoController.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/jquery-1.9.1.js"></script>
+</head>
+<body ng-controller="AlunoController">
+    <h2>Retorno de alunos</h2>
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>RA</th>
+            <th>CPF</th>
+        </tr>
+        <tr>
+            <td>{{retornoApi[0].id}}</td>
+            <td>{{retornoApi[0].nome}}</td>
+            <td>{{retornoApi[0].ra}}</td>
+            <td>{{retornoApi[0].cpf}}</td>
+        </tr>
+        <tr>
+            <td>{{retornoApi[1].id}}</td>
+            <td>{{retornoApi[1].nome}}</td>
+            <td>{{retornoApi[1].ra}}</td>
+            <td>{{retornoApi[1].cpf}}</td>
+        </tr>
+        <tr>
+            <td>{{retornoApi[2].id}}</td>
+            <td>{{retornoApi[2].nome}}</td>
+            <td>{{retornoApi[2].ra}}</td>
+            <td>{{retornoApi[2].cpf}}</td>
+        </tr>
+    </table>
+</body>
+</html>

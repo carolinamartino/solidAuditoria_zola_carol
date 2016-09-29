@@ -16,6 +16,9 @@ namespace Domain.Entities
         public int Ra { get; set; }
         public string Cpf { get; set; }
 
+        public bool mensalidade { get; set; }
+
+
         public bool IsValid()
         {
             return EmailService.IsValid(Email) && CpfService.IsValid(Cpf) && IdadeService.IsValid(DataNascimento);
